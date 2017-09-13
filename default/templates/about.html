@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title_text %}关于我们{% endblock %}
+
+{% block stylesheet %}/static/about.css{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-info" role="alert">
+                    <h2>俱乐部性质</h2>
+                    <p>
+                        俱乐部是由华南理工大学软件学院、华南理工大学主机教育创新中心发起，
+                        由对IBM公司的技术和运营感兴趣的华南理工大学软件学院学生筹建的非盈利性的技术性学生社团，
+                        是一个以服务全体华工学子为目的、独立运作的学生组织。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="alert alert-success" role="alert">
+                    <h2>俱乐部宗旨</h2>
+                    <p>
+                        为广大会员搭建一个最广泛的交流平台和创造一个最宽广的活动空间，
+                        一方面通过提供接触IBM最新研究成果和优秀企业文化的机会，
+                        使会员能够了解IBM的技术和运营，
+                        普及和加强信息技术教育，
+                        促进各学科间的交流和融合，
+                        另一方面通过学生的积极参与，
+                        激发会员的创造力和活动组织能力，
+                        使会员不仅在专业技术上，
+                        在创新意识上，而且在组织、领导、策划和沟通能力上都能够有质的飞跃，
+                        最终通过全体会员的努力，
+                        将俱乐部建设为华南理工大学技术研究性团体，
+                        华南理工大学素质教育及综合性人才培养基地，
+                        最终成为培养工程师、科学家和企业家的摇篮。
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="col-sm-12">
+                <div class="well">
+                    <h2>组织架构</h2>
+                    <img src="/static/images/zuzhijiegou.png" width="100%" height="100%">
+                    <P>注:俱乐部成员具有双重身份,一方面需要参与到俱乐部的日常运营中来,另一方面可以选择自己喜欢的项目组进行技术活动</P>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
