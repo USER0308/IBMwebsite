@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba4e8c43-4224-4e4a-ad2b-5f71c6757cca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IBM_CLUB_WEBSITE_31.iml" afterPath="$PROJECT_DIR$/.idea/IBM_CLUB_WEBSITE_31.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default/admin.py" afterPath="$PROJECT_DIR$/default/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default/models.py" afterPath="$PROJECT_DIR$/default/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default/templates/base.html" afterPath="$PROJECT_DIR$/default/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default/templates/join.html" afterPath="$PROJECT_DIR$/default/templates/join.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default/views.py" afterPath="$PROJECT_DIR$/default/views.py" />
     </list>
     <ignored path="IBM_CLUB_WEBSITE_31.iws" />
     <ignored path=".idea/workspace.xml" />
