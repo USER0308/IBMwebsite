@@ -1,6 +1,6 @@
 # encoding:utf-8
 from django.db import models
-
+from django.utils import timezone
 
 class RegisterTable(models.Model):
     # 姓名
@@ -33,3 +33,8 @@ class RegisterTable(models.Model):
     plan = models.TextField(default='')
     # 自我评价
     assess = models.TextField(default='')
+    # 发送时间
+    time = models.DateTimeField( null=False,default=timezone.now )
+
+    class Meta:
+        ordering = ['-time',]

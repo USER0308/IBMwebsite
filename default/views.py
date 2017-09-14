@@ -26,11 +26,13 @@ def lib_page(request):
 
 def join(request):
 
+    print request
+
     RegisterTable.objects.create(
         # 姓名
         name=request.POST['name'],
         # 性别
-        sex=request.POST.getlist('sex')[0],
+        sex=request.POST['sex'],
         # 民族
         nation=request.POST['nation'],
         # 电话
@@ -50,7 +52,7 @@ def join(request):
         # 部门
         apartment=request.POST.getlist('apartment'),
         # 是否服从分配
-        # agree_to_allocation=request.POST['agree_to_allocation'],
+        #agree_to_allocation=request.POST['agree_to_allocation'],
         # 期待
         await=request.POST['await'],
         # 大学的计划

@@ -3,4 +3,8 @@ from default.models import RegisterTable
 
 
 # Register your models here.
-admin.site.register(RegisterTable)
+
+class RegisterTable_ModelAdmin(admin.ModelAdmin):
+	list_display = ( 'name','time' )
+
+admin.site.register(RegisterTable,RegisterTable_ModelAdmin)
