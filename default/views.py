@@ -26,7 +26,10 @@ def lib_page(request):
 
 def join(request):
 
-    print request
+    if request.method == 'GET':
+        return render(request, 'join.html')
+
+    print request.POST['agree_to_allocation']
 
     RegisterTable.objects.create(
         # 姓名
@@ -49,10 +52,10 @@ def join(request):
         organization=request.POST['organization'],
         # 技术倾向
         tech=request.POST['tech'],
-        # 部门
-        apartment=request.POST.getlist('apartment'),
+        # 申请部门
+        apartment=request.POST['apartment'],
         # 是否服从分配
-        #agree_to_allocation=request.POST['agree_to_allocation'],
+        agree_to_allocation=request.POST['agree_to_allocation'],
         # 期待
         await=request.POST['await'],
         # 大学的计划
@@ -65,8 +68,6 @@ def join(request):
                       'result_title': '报名成功',
                       'result_picture_name': 'success.png',
                       'result_text_p1': '确认邮件将会在一天内发送 如未收到请发送邮件至wangboquan220116@outlook.com',
-                      'result_text_p2': '具体面试时间将以短信和邮件的形式通知',
-                      'result_action': "javascript:window.opener=null;window.open('','_self');window.close();",
-                      'result_action_text': '关闭本页面'
+                      'result_text_p2': '具体面试时间将以短信和邮件的形式通知'
                   })
 
